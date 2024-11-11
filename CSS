@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #1e1e40, #090a2a, #000000);
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%; /* Slightly increased width */
+    margin: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FFD700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+}
+
+#data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1.2em; /* Increased font size */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#data-table th, #data-table td {
+    padding: 16px 18px; /* Increased padding for larger cells */
+    border: 1px solid #444;
+}
+
+#data-table th {
+    background-color: #3944bc;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em; /* Slightly larger header font */
+}
+
+#data-table td {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+#updated-time {
+    font-style: italic;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* Galaxy star effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.3;
+    z-index: -1;
+}
